@@ -13,7 +13,7 @@ jobs:
       TO_USERNAME: ${{ secrets.TO_USERNAME }}
       TO_PASSWORD: ${{ secrets.TO_PASSWORD }}
     steps:
-    - name: Dockerhub to Aliyun
+    - name: Dockerhub to Registry
       run: |
         cat << EOF >config.yaml
         from:
@@ -72,7 +72,7 @@ jobs:
       TO_USERNAME: ${{ secrets.TO_USERNAME }}
       TO_PASSWORD: ${{ secrets.TO_PASSWORD }}
     steps:
-    - name: Quay to Aliyun
+    - name: Quay to Registry
       run: |
         cat << EOF >config.yaml
         from:
@@ -106,7 +106,7 @@ jobs:
       TO_USERNAME: ${{ secrets.TO_USERNAME }}
       TO_PASSWORD: ${{ secrets.TO_PASSWORD }}
     steps:
-    - name: Gcr to Aliyun
+    - name: Gcr to Registry
       run: |
         cat << EOF >config.yaml
         from:
