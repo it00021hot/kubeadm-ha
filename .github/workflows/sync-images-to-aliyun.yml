@@ -19,7 +19,7 @@ jobs:
         from:
           registry: https://registry-1.docker.io
         to:
-          registry: https://registry.aliyuncs.com
+          registry: https://harbor.prod.k8s.lesso.com
         names:
           - library/nginx:1.19-alpine
           - library/haproxy:2.3-alpine
@@ -78,7 +78,7 @@ jobs:
         from:
           registry: https://quay.io
         to:
-          registry: https://registry.aliyuncs.com
+          registry: https://harbor.prod.k8s.lesso.com
         names:
           - coreos/flannel
           - jetstack/cert-manager-cainjector
@@ -112,7 +112,7 @@ jobs:
         from:
           registry: https://k8s.gcr.io
         to:
-          registry: https://registry.aliyuncs.com
+          registry: https://harbor.prod.k8s.lesso.com
         names:
           - kube-apiserver
           - kube-controller-manager
