@@ -1,4 +1,4 @@
-name: Sync images to Aliyun
+name: Sync images to Registry
 on:
   schedule:
     - cron: '0 0 * * *'
