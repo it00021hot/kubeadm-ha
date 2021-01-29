@@ -91,7 +91,6 @@
 # docker_mirror: 
 # - "https://reg-mirror.qiniu.com"
 # - "https://hub-mirror.c.163.com"
-# - "https://docker.mirrors.ustc.edu.cn"
 
 # # 信任的不安全镜像库地址，默认为 Pod 和 Service 网段
 # docker_insecure_registries:
