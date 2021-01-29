@@ -8,7 +8,7 @@ on:
 jobs:
   dockerhub-to-aliyun:
     runs-on: ubuntu-20.04
-    container: setzero/images-sync:0.3.1
+    container: setzero/images-sync:0.3.2
     env:
       TO_USERNAME: ${{ secrets.TO_USERNAME }}
       TO_PASSWORD: ${{ secrets.TO_PASSWORD }}
@@ -67,7 +67,7 @@ jobs:
 
   quay-to-aliyun:
     runs-on: ubuntu-20.04
-    container: setzero/images-sync:0.3.1
+    container: setzero/images-sync:0.3.2
     env:
       TO_USERNAME: ${{ secrets.TO_USERNAME }}
       TO_PASSWORD: ${{ secrets.TO_PASSWORD }}
@@ -101,7 +101,7 @@ jobs:
 
   gcr-to-aliyun:
     runs-on: ubuntu-20.04
-    container: setzero/images-sync:0.3.1
+    container: setzero/images-sync:0.3.2
     env:
       TO_USERNAME: ${{ secrets.TO_USERNAME }}
       TO_PASSWORD: ${{ secrets.TO_PASSWORD }}
